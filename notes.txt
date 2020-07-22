@@ -1,0 +1,26 @@
+// response after register
+// sign up data
+{
+  "username": "shahbaz",
+  "pool": {
+    "userPoolId": "ap-south-1_r9fHtoroH",
+    "clientId": "ilos7echrdo35kap3fsrpc1il",
+    "client": {
+      "endpoint": "https://cognito-idp.ap-south-1.amazonaws.com/",
+      "fetchOptions": {}
+    },
+    "advancedSecurityDataCollectionFlag": true
+  },
+  "Session": null,
+  "client": {
+    "endpoint": "https://cognito-idp.ap-south-1.amazonaws.com/",
+    "fetchOptions": {}
+  },
+  "signInUserSession": null,
+  "authenticationFlowType": "USER_SRP_AUTH",
+  "keyPrefix": "CognitoIdentityServiceProvider.ilos7echrdo35kap3fsrpc1il",
+  "userDataKey": "CognitoIdentityServiceProvider.ilos7echrdo35kap3fsrpc1il.shahbaz.userData"
+}
+
+//JWT token
+eyJraWQiOiJBQUtcL2hyeWxYaGlUTEdrUjNua2htVHZkZFZcLzlSSU1kaWx3ZFhTN1VWTlU9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJkZjE3Mzk0Ny04MjdlLTQzNmEtYmMyMy0zYjg3OTQ1MDRmN2IiLCJldmVudF9pZCI6IjMyNWFhZjkwLTk1OGUtNDU4ZS04ODFiLTE3OWNkY2FmNDhiMSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE1OTUwMTg5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoLTFfcjlmSHRvcm9IIiwiZXhwIjoxNTk1MDIyNTUxLCJpYXQiOjE1OTUwMTg5NTEsImp0aSI6Ijc5OTViZDIyLWQ4ZmEtNDBlOC05MWUzLTZmODkzNjIzZGM4ZiIsImNsaWVudF9pZCI6Imlsb3M3ZWNocmRvMzVrYXAzZnNycGMxaWwiLCJ1c2VybmFtZSI6InNoYWhiYXoifQ.axc8R398aGWl0rT8YuNcPUs3SgrlU8tACJTKV20M4o1fv3yLf-vgHu8be3X7NxHvUFtnyAJ_5U0UA9LgZogQGoHTGmUfYS2_q0i7o1OwtNBe2ErjW8VmXOZlGDcyd8osTwd50OiY5PW1tmlnA8Ui22p77QZja8x9OWMX7LsqA19PCLD0dpFE9Dav5voK2AfuyLE3ykTxhguzvrzvLjbU2QYRXow5W6hbFMijT0BmZmXrygmJRm0Rmu3xYJZ8kq03khiiZhMSt1vhyCeaSUwb1NaC3Due62eMDPdEcVuW-0bBX2X0ZsDF3yvbtiBUvzD6LhxJ4LqyDdnk-kjy1V6OCg
