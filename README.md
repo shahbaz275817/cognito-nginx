@@ -54,6 +54,9 @@ To register for a new account send a http POST request to http://15.206.73.154:8
   ```
   idx will act as the index for the paginated api..1 will return the first page..2 will return the 2nd page and so on..
   
+  ## Demo video
+  https://drive.google.com/file/d/1ja9ML4VJDUdv_woaoRvnxD_cAaCvbfLq/view?usp=sharing
+  
   ## References
   https://www.npmjs.com/package/amazon-cognito-identity-js<br/>
   
