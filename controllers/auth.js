@@ -36,5 +36,5 @@ exports.validate_token = function (req, res) {
 }
 
 exports.simple_hello = function (req, res) {
-  res.send("Server up and running...login or register to continue
+  res.send("Server up and running...login or register to continue")
 }
