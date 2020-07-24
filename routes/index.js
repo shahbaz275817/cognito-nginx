@@ -5,7 +5,7 @@ const authController = require('../controllers/auth');
 const authMiddleware = require('../middlewares/authMiddleware');
 const logsController = require('../controllers/logs')
 
-router.get('/hello', authMiddleware.Validate, authController.simple_hello);
+router.get('/', authController.simple_hello);
 
 router.post('/auth/register', authController.register);
 router.post('/auth/login', authController.login);

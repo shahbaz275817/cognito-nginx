@@ -28,8 +28,9 @@ exports.Register = function (body, callback) {
   userPool.signUp(name, password, attributeList, null, function (err, result) {
     if (err)
       callback(err);
-    var cognitoUser = result.user;
-    callback(null, cognitoUser);
+//     var cognitoUser = result.user;
+//     console.log({cognitoUser})
+    callback(null, 'Signup successfull..please verify your account');
   })
 }
 
