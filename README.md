@@ -13,3 +13,40 @@ npm install
 ```bash
 npm start
 ```
+
+## Usage
+
+check if the server is up and running by sending http get request to localhost:3000
+
+To register for a new account send a http POST request to localhost:3000/auth/register with the request body as:
+```json
+{ "name": "someusername",
+  "password": "somesecurepassword",
+  "email": "youremail@domain.com"
+  }
+  ```
+  Verify your account you just created by sending http POST request to localhost:3000/auth/verify with request body:
+  ```json
+  { "name":"usernameUsedtoCreateAccount",
+  "code":"verificationCodeFromEmail"
+  }
+  ```
+  To login to your newly created account, send a http POST request to localhost:3000/auth/login with body as:
+  ```json
+  { "name":"yourusername",
+  "password":"yourpassword"
+  }
+  ```
+  You will receive an JWT which will be used later to autheticate you on the server for fetchng fetching the nginx logs
+  
+  # Fetching the nginx logs
+  There are two types of nginx log 1.Access logs and 2. Errors logs. which can be fetched using these two api endpoints:
+  for access logs: http:localhost:3000/logs/accesslogs
+  for error logs: http:localhost:3000/logs/errorlogs
+  
+  send a POST request to these endpoints with the Authorization header set with the JWT received during the login 
+  with the request body as
+  ```json
+  { "idx": "1" }
+  ```
+  idx will act as the index for the paginated api..1 will return the first page..2 will return the 2nd page and so on..
