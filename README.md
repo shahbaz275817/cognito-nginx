@@ -16,9 +16,9 @@ npm start
 
 ## Usage
 
-check if the server is up and running by sending http get request to localhost:3000
+check if the server is up and running by sending http get request to http://15.206.73.154:80
 
-To register for a new account send a http POST request to http://localhost:3000/auth/register with the request body as:
+To register for a new account send a http POST request to http://15.206.73.154:80/auth/register with the request body as:
 ```json
  { 
    "name": "someusername",
@@ -26,14 +26,14 @@ To register for a new account send a http POST request to http://localhost:3000/
    "email": "youremail@domain.com"
   }
   ```
-  Verify your account you just created by sending http POST request to http://localhost:3000/auth/verify with request body:
+  Verify your account you just created by sending http POST request to http://15.206.73.154:80/auth/verify with request body:
   ```json
   { 
     "name":"usernameUsedtoCreateAccount",
     "code":"verificationCodeFromEmail"
   }
   ```
-  To login to your newly created account, send a http POST request to http://localhost:3000/auth/login with body as:
+  To login to your newly created account, send a http POST request to http://15.206.73.154:80/auth/login with body as:
   ```json
   { 
     "name":"yourusername",
@@ -44,8 +44,8 @@ To register for a new account send a http POST request to http://localhost:3000/
   
   # Fetching the nginx logs
   There are two types of nginx log 1.Access logs and 2. Errors logs. which can be fetched using these two api endpoints:
-  for access logs: http://localhost:3000/logs/accesslogs
-  for error logs: http://localhost:3000/logs/errorlogs
+  for access logs: http://15.206.73.154:80/logs/accesslogs
+  for error logs: http://15.206.73.154:80/logs/errorlogs
   
   send a POST request to these endpoints with the Authorization header set with the JWT received during the login 
   with the request body as
